@@ -1,7 +1,7 @@
 import { Notify } from "notiflix";
 
 
-///
+
 const fetch = new FetchInfo();
 
 export function openOrderModal(){
