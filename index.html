@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/project-MasterchefRecipes/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Masterchef Recipes</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://uicdn.toast.com/tui.pagination/latest/tui-pagination.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    
+    <script type="module" crossorigin src="/project-MasterchefRecipes/assets/favorite-a775025e.js"></script>
+    <link rel="stylesheet" href="/project-MasterchefRecipes/assets/favorite-f96d755b.css">
+  </head>
+  <body>
+    <header class="page-header" id="home">
+  <div class="container page-header-container">
+    <nav class="page-nav">
+      <ul class="menu list">
+        <li class="menu-item">
+          <a class="link menu-link" href="./index.html">Home</a>
+        </li>
+        <li class="menu-item">
+          <a class="link menu-link" href="/favorite.html">Favorites</a>
+        </li>
+      </ul>
+
+      <a class="link logo" href="./index.html" title="logotype">
+        <span><span class="logo-text">tasty</span>treats.</span>
+      </a>
+    </nav>
+
+    <div class="header-chart-and-switcher-container">
+      <a
+        href="tel:+380730000000"
+        rel="noreferrer noopener"
+        class="header-chart-link"
+      >
+        <svg class="header-chart-icon" width="24" height="24">
+          <use href="/project-MasterchefRecipes/assets/icons-4f432d10.svg#cart"></use>
+        </svg>
+      </a>
+
+      <label class="switch">
+        <input type="checkbox" id="theme-toggle" />
+        <span class="theme-slider"></span>
+      </label>
+
+      <button type="button" class="registration-btn">
+        <svg class="registration-btn-icon" width="32" height="32">
+          <use href="/project-MasterchefRecipes/assets/icons-4f432d10.svg#account"></use>
+        </svg>
+      </button>
+
+
+      <button type="button" class="mobile-menu-open js-open-menu">
+        <svg class="mobile-menu-open-icon" width="32" height="32">
+          <use href="/project-MasterchefRecipes/assets/icons-4f432d10.svg#burger"></use>
+        </svg>
+      </button>
+
+      
+    </div>
+  </div>
+
+  <!-- MOBILE MENU -->
+
+  <div class="mobile-menu js-menu-container">
+    <div class="mobile-menu-container">
+      <button class="modal-close-btn js-close-menu hidden">
+        <svg class="mobile-menu-close-icon">
+          <use href="/project-MasterchefRecipes/assets/icons-4f432d10.svg#close-icon"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu-list list">
+        <li class="mobile-menu-list-item">
+          <a class="link mobile-menu-link menu-link js-close-menu" href="#home"
+            >Home</a
+          >
+        </li>
+        <li class="mobile-menu-list-item">
+          <a
+            class="link mobile-menu-link menu-link js-close-menu"
+            href="#favorites"
+            >Favorites</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+    
+<section>
+  <div class="container hero">
+    <div class="hero-description">
+      <h1 class="hero-text">
+        Learn to Cook <span class="hero-span">Tasty Treats'</span> Customizable
+        Masterclass
+      </h1>
+      <p class="hero-second-text">
+        TastyTreats - Customize Your Meal with Ingredient Options and
+        Step-by-Step Video Guides.
+      </p>
+      <button type="button" class="hero-btn">Order now</button>
+    </div>
+    <div class="hero-event"></div>
+  </div>
+</section>
+
+
+
+
+
+    <main>
+      <section>
+        <div class="container">
+          <div class="left-container">
+            <div class="button-container">
+  <button class="categories-btn">All categories</button>
+    <ul class="categories-wrapper">
+    </ul>
+</div>
+            <h2 class="popular-title">Popular recipes</h2>
+<ul class="popular-list">
+    
+</ul>
+          </div>
+          <div class="right-container">
+            <div class="form-container">
+    <form class="search-form" name="search-form">
+        <label for="input-search" class="label-form"> Search
+            <div class="search-overlay">
+                <input class="input-form input-search" id="input-search" type="text" placeholder="Enter Text">
+                <svg class="icon-search" width="18" height="18">
+                    <use href="../img/icons.svg#search"></use>
+                </svg>
+                <button class="btn-close-search" type="button">
+                    <svg class="icon-close-search" width="18" height="18">
+                        <use href="../img/icons.svg#close-icon"></use>
+                    </svg>
+                </button>
+            </div>
+        </label>
+        <!-- Вибір по часу приготування  -->
+        <label for="input-time" class="label-form">Time
+            <div class="search-overlay">
+                <input class="input-form input-time" type="text" id="input-time" placeholder="0 min" disabled>
+                <button class="btn-select-time btn-chevron-down" type="button">
+                    <svg class="icon-select-time icon-chevron-down" width="18" height="18">
+                        <use href="../img/icons.svg#icon-chevron-down">
+                    </svg>
+                </button>
+                <ul class="form-select select-time">
+                    <li class="option-tag" value="">0 min</li>
+                    <li class="option-tag" value="">10 min</li>
+                    <li class="option-tag" value="">20 min</li>
+                    <li class="option-tag" value="">30 min</li>
+                    <li class="option-tag" value="">40 min</li>
+                    <li class="option-tag" value="">50 min</li>
+                    <li class="option-tag" value="">60 min</li>
+                    <li class="option-tag" value="">70 min</li>
+                    <li class="option-tag" value="">80 min</li>
+                    <li class="option-tag" value="">90 min</li>
+                    <li class="option-tag" value="">100 min</li>
+                    <li class="option-tag" value="">110 min</li>
+                    <li class="option-tag" value="">120 min</li>
+                </ul>
+            </div>
+        </label>
+        <!-- Пошук за країною походження -->
+
+        <label for="input-area" class="label-form">Area
+            <div class="search-overlay">
+                <input class="input-form input-area" type="text" id="input-area" placeholder="Region" disabled>
+                <button class="btn-select-area btn-chevron-down" type="button">
+                    <svg class="icon-select-area icon-chevron-down" width="18" height="18">
+                        <use href="../img/icons.svg#icon-chevron-down">
+                    </svg>
+                </button>
+                <ul class="form-select select-area">
+                </ul>
+            </div>
+        </label>
+        <!-- Пошук за інгридієнтами -->
+
+        <label for="input-ingredients" class="label-form">Ingredients
+            <div class="search-overlay">
+                <input class="input-form input-ingredients" type="text" id="input-ingredients" placeholder="Ingredients"
+                    disabled>
+                <button class="btn-select-ingredients btn-chevron-down" type="button">
+                    <svg class="icon-select-ingredients icon-chevron-down" width="18" height="18">
+                        <use href="../img/icons.svg#icon-chevron-down">
+                    </svg>
+                </button>
+                <ul class="form-select select-ingredients">
+                </ul>
+            </div>
+        </label>
+    </form>
+    <div class="reset-block">
+        <p class="reset-text">Reset the filter</p>
+        <button class="btn-reset-filter" type="button">
+            <svg class="icon-reset-search" width="18" height="18">
+                <use href="../img/icons.svg#close-icon"></use>
+            </svg>
+        </button>
+    </div>
+
+    <div class="gallery-recipes"></div>
+</div>
+            <div class="gallery-recipes"></div>
+          </div>
+        </div>
+        <div class="pagination-container"><div id="tui-pagination-container" class="tui-pagination">
+    
+</div>
+
+</div>
+      </section>
+    </main>
+
+    <section>
+  <div class="footer-container">
+    <div class="develop-container">
+      <h3 class="footer-title">Project Developers</h3>
+      <ul class="develop-list">
+        <li class="item-list">
+          <img
+            src="../img/anonimus.jpg"
+            alt=""
+            width="100px"
+            height="100px"
+            class="develop-img"
+          />
+          <p class="develop-text">Nick Tsalyn</p>
+        </li>
+        <li class="item-list">
+          <img
+            src="../img/anonimus.jpg"
+            alt=""
+            width="100px"
+            height="100px"
+            class="develop-img"
+          />
+          <p class="develop-text">Anna Kulchytska</p>
+        </li>
+        <li class="item-list">
+          <img
+            src="../img/anonimus.jpg"
+            alt=""
+            width="100px"
+            height="100px"
+            class="develop-img"
+          />
+          <p class="develop-text">Daria Musienko</p>
+        </li>
+        <li class="item-list">
+          <img
+            src="../img/anonimus.jpg"
+            alt=""
+            width="100px"
+            height="100px"
+            class="develop-img"
+          />
+          <p class="develop-text">Igor Cherviakov</p>
+        </li>
+        <li class="item-list">
+          <img
+            src="../img/anonimus.jpg"
+            alt=""
+            width="100px"
+            height="100px"
+            class="develop-img"
+          />
+          <p class="develop-text">Oleh Panadii</p>
+        </li>
+        <li class="item-list">
+          <img
+            src="../img/anonimus.jpg"
+            alt=""
+            width="100px"
+            height="100px"
+            class="develop-img"
+          />
+          <p class="develop-text">Oleksandr Tsybulskiy</p>
+        </li>
+        <li class="item-list">
+          <img
+            src="../img/anonimus.jpg"
+            alt=""
+            width="100px"
+            height="100px"
+            class="develop-img"
+          />
+          <p class="develop-text">Eugene Matviychuk</p>
+        </li>
+        <li class="item-list">
+          <img
+            src="../img/anonimus.jpg"
+            alt=""
+            width="100px"
+            height="100px"
+            class="develop-img"
+          />
+          <p class="develop-text">Kate Shcherbina</p>
+        </li>
+        <li class="item-list">
+          <img
+            src="../img/anonimus.jpg"
+            alt=""
+            width="100px"
+            height="100px"
+            class="develop-img"
+          />
+          <p class="develop-text">Daryna Petrunina</p>
+        </li>
+        <li class="item-list">
+          <img
+            src="../img/anonimus.jpg"
+            alt=""
+            width="100px"
+            height="100px"
+            class="develop-img"
+          />
+          <p class="develop-text">Roman Chuykov</p>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="footer-title">Contacts</h3>
+      <ul class="social-list">
+        <li>
+          <a href="https://goit.global/ua/">
+            <svg class="social-icon" width="26" height="26">
+              <use href="/project-MasterchefRecipes/assets/icons-4f432d10.svg#sphere"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/goitclub/">
+            <svg class="social-icon" width="26" height="26">
+              <use href="/project-MasterchefRecipes/assets/icons-4f432d10.svg#instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/GoITclub.ua/">
+            <svg class="social-icon" width="26" height="26">
+              <use href="/project-MasterchefRecipes/assets/icons-4f432d10.svg#facebook"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <p>&copy; 2023 All Rights Reserved by Nick's Eleven</p>
+  </div>
+</section>
+
+
+    
+  </body>
+</html>
