@@ -10,4 +10,5 @@ import './js/popular';
 import './js/pagination';
 import './js/modal-rating';
 import './js/registration';
-import './js/favorite'
+import './js/favorite';
+import './js/order/orderNow';
