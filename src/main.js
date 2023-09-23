@@ -11,4 +11,4 @@ import './js/pagination';
 import './js/modal-rating';
 import './js/registration';
 import './js/favorite';
-import './js/order/orderNow';
+import './js/fn-order';
